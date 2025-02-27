@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    width: 100%;
+
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(229, 255, 0);
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar .logo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.navLinks ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+a{
+    color: black;
+}
+.hero {
+    height: 100vh;
+    background: url(Assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+}
+
+.hero .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.overlay .heading h1,p {
+    text-align: left;
+    padding: 20px;
+}
+.btns{
+    gap: 10px;
+    padding: 20px;
+}
+.btn{
+    border-radius: 10px;
+    padding: 10px 40px;
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: black;
+    color: #fff;
+    transition:cubic-bezier(1, 0, 0, 1)
+}
+
+.about{
+    padding: 100px 0;
+    width: 80%;
+    margin: auto;
+}
+@media screen and (max-width: 768px) {
+    .more{
+        gap: 10px;
+    }
+    .more a{
+        margin-bottom: 10px;
+        display: block;
+    
+    }
+    
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+}
+.about-content{
+    flex: 1 1 200px;
+}
+.about-content img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.solutions{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+}
+.card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 1 1 200px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;;
+}
